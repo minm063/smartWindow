@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="ip"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:id="@+id/addressText" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="포트 번호"
+        android:ems="10"
+        android:id="@+id/portText"
+        android:layout_below="@+id/addressText"
+        android:layout_alignStart="@+id/addressText" />
+
+    <Button
+        android:text="clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonClear"
+        android:layout_alignBaseline="@+id/buttonConnect"
+        android:layout_alignBottom="@+id/buttonConnect"
+        android:layout_alignEnd="@+id/portText" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonConnect"
+        android:layout_below="@+id/portText"
+        android:layout_alignStart="@+id/portText"
+        android:layout_marginTop="13dp" />
+
+</RelativeLayout>
